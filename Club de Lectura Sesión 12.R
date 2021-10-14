@@ -3,7 +3,7 @@
 #R para Ciencia de Datos (Wickham y Grolemund)
 #R-Ladies Barranquilla, Galapagos, Guayaquil y Milagro
 
-#Sesion 13: Capitulo 24 y 25 (Construcción de modelos y muchos modelos)
+#Sesion 13: Capitulo 24 (ConstrucciÃ³n de modelos)
 #Script por: Naomy Vera y Julissa Magallanes (R-Ladies Milagro)
 ###########################################################################
 
@@ -84,7 +84,7 @@ ggplot(diamantes2,aes(claridad,lresid))+geom_boxplot()
 # En este caso trabajaremos a traves de un proceso similar para un conjunto de datos diferente
 
 # El conjunto de datos con el que se trabaja es: 
-### `gapminder` su traduccion es paises, para mayor facilidad trabajamos con los datos en español
+### `gapminder` su traduccion es paises, para mayor facilidad trabajamos con los datos en espaÃ±ol
 
 # Cargamos la data
 paises
@@ -100,12 +100,12 @@ glimpse(paises)
 # geom_line, geom_boxplot, etc.
 # Planteamos un grafico sencillo con ggplot
 # usamos la funcion geom_line para hacer un grafico de lineas
-# Planteamos la evolucion del pib_per_capita a traves de los años de los paises 
+# Planteamos la evolucion del pib_per_capita a traves de los aÃ±os de los paises 
 
 paises %>%
   ggplot(aes(anio, pib_per_capita, group = pais)) +
   geom_line(alpha = 1 / 3) +
-  ggtitle("Evolución del pib per cápita de los paises")
+  ggtitle("EvoluciÃ³n del pib per cÃ¡pita de los paises")
 
 # Para crear graficos de cajas o boxplot utilizamos geom_boxplot. 
 # Este grafico permite conocer rapidamente tanto la dispersion, como la asimetria, 
@@ -125,7 +125,7 @@ ggplot(paises, aes(anio, pib_per_capita)) +
 mod1 <- lm(pib_per_capita ~ anio + continente, data = paises)
 
 
-#Información sobre el modelo/ resumen 
+#InformaciÃ³n sobre el modelo/ resumen 
 summary(mod1)
 
 
