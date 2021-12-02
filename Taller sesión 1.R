@@ -30,7 +30,7 @@ plot(cos(y))
 #Si le asignamos a 'y' un objeto que no es numerico
 #obtenemos otro tipo de variable
 y <- "Hola soy y"
-class(x)
+class(y)
 
 #Operadores comparativos
 x <- 5
@@ -119,6 +119,7 @@ m1 <- rbind(c(1, 3, -5), c(0, -1, 60))
 m1
 
 m2 <- cbind(c(1, 3, -5), c(0, -1, 60))
+m2
 
 #Otra forma de construir matrices es mediante 
 #la función primitiva matrix()
